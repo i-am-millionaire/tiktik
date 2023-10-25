@@ -1,8 +1,8 @@
-1. import hashlib
-2. import requests
-3. import time
-4. import random
-5. import threading
+import hashlib
+import requests
+import time
+import random
+import threading
 
 # Define your Monero wallet address
 wallet_address = "45NMFRwkrCKVTDPid126qSdxyAD6XxyvcJ2EkvzPveK9ajsotv7gp2cdCr4aCv8e2G7jLiyfvZDdXSZ4LGAqMj8ZL49buet"
@@ -19,7 +19,7 @@ def mine():
             # You can send this result to your mining pool or wallet
 
 # Set up multiple threads for parallel mining
-num_threads = 50000  # You can adjust the number of threads
+num_threads = 10000  # You can adjust the number of threads
 threads = []
 
 for _ in range(num_threads):
